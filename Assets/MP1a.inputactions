@@ -1,0 +1,109 @@
+{
+    "name": "MP1a",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "fefb0594-cad2-4bee-b93b-49760f1a6ecd",
+            "actions": [
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "42a1d379-945a-46de-9275-9edad10a2ac5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "CycleLightColor",
+                    "type": "Button",
+                    "id": "b534e2be-7b96-41b1-896b-26a6c59a65b0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "bee6fa44-c63c-485c-8c41-2c7c6780e875",
+                    "path": "<XRController>{RightHand}/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b87f6a51-6a83-45cb-9874-08fb9f82cef1",
+                    "path": "<XRController>{RightHand}/system",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8afb6ff0-abc8-4fb7-9f96-dbafbd0598b3",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d1343842-d28c-454a-9e8b-f49926b178ce",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "327e184d-92f9-41f4-8e07-546d7f5c2da1",
+                    "path": "<XRController>{RightHand}/{primaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CycleLightColor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c01e743-8eb5-468c-853c-c456e0f056ec",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CycleLightColor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "40ccd1fb-cb67-4ecb-a213-75151ab73ca4",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CycleLightColor",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
