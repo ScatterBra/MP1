@@ -68,3 +68,7 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+# Visual Studio 新格式解决方案文件
+*.slnx
+
