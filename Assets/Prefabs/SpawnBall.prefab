@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8770598106054092948}
   - component: {fileID: 1338308884565487009}
   - component: {fileID: 4780503208576042817}
+  - component: {fileID: 285719853075103792}
   m_Layer: 0
   m_Name: SpawnBall
   m_TagString: Untagged
@@ -188,3 +189,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &285719853075103792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7280834943370997687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c1d64fd195be243b4354c79f18b045, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnedBody
+  velocity: {x: 0, y: 0, z: 0}
+  attractor: {fileID: 0}
+  gravity: 20
