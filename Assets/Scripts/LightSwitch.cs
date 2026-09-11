@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-/// 2.3 Light Switch - steps the point light through a list of colours.
+/// 2.3 Light Switch - steps the point light through a list of colours, with a
+/// particle burst (tinted to the new colour) and a 3D sound at the light.
 [RequireComponent(typeof(Light))]
 public class LightSwitch : MonoBehaviour
 {
@@ -15,6 +16,16 @@ public class LightSwitch : MonoBehaviour
         new Color(0.35f, 0.55f, 1.00f),  // blue
         new Color(1.00f, 0.85f, 0.20f),  // yellow
     };
+
+    [Header("Feedback")]
+    [Tooltip("Particle burst played at the light on each change. Tinted to the new colour.")]
+    public ParticleSystem burstPrefab;
+
+    [Tooltip("3D sound played from the light on each change.")]
+    public AudioClip sound;
+
+    [Tooltip("Distance within which the sound is at full volume. The light sits on the ceiling, far above the user, so this is large.")]
+    public float soundMinDistance = 10f;
 
     Light pointLight;
     int index;
@@ -44,5 +55,13 @@ public class LightSwitch : MonoBehaviour
         if (colors.Length == 0) return;
         index = (index + 1) % colors.Length;
         pointLight.color = colors[index];
+
+        // Slightly below the light so the burst isn't hidden behind the ceiling.
+        ParticleSystem burst = Feedback.Play(burstPrefab, sound, transform.position + Vector3.down * 0.5f, soundMinDistance);
+        if (burst != null)
+        {
+            var main = burst.main;
+            main.startColor = colors[index];
+        }
     }
 }
