@@ -8,7 +8,7 @@ rundong9@illinois.edu
 
 ## Links
 
-- **Play in browser (itch.io):** https://scatterbra.itch.io/cs-417-mp1a 
+- **itch.io:** https://scatterbra.itch.io/cs-417-mp1a 
 - **Repository:** https://github.com/ScatterBra/MP1 
 
 
